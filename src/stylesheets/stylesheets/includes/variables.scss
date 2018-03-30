@@ -1,0 +1,51 @@
+/**
+  Medallion and band Pallete: https://carnival.atlassian.net/wiki/display/TDC/Color
+ */
+$silver: #D8D8D8;
+$red: #F90B3B;
+$blue: #004AC2;
+$purple: #7301B9;
+$black-metal: #343538;
+$pink: #FF458E;
+$ligh-blue: #1BCDF6;
+$black: #000000;
+$brown: #74471F;
+$light-brown: #BC723D;
+
+
+$green: #4CAF50;
+
+$primary-color: #FFF;
+$disabled-color: rgba(255, 255, 255, 0.3);
+$active-color: rgba(130, 183, 245, 1);
+$fully-transparent: rgba(0, 0, 0, 0);
+$jump-button-color: #F4EA0B;
+$ocean-blue: #003087;
+$red: #F90B3B;
+
+
+$extraSmallScreenBreak: 480px;
+$smallScreenBreak: 768px;
+$mediumScreenBreak: 1280px;
+
+$smallScreen: (min-width: 360px) and (max-width: $smallScreenBreak - 1);
+$mediumScreen: (min-width: $smallScreenBreak) and (max-width: $mediumScreenBreak - 1);
+$largeScreen: (min-width: $mediumScreenBreak);
+
+$darker-background-color: #35568C;
+$default-animation-speed: 1.5s;
+
+$standardItemWidth: 50px;
+$standardItemHeight: 50px;
+$standardItemPadding: 5px;
+$standardItemFontSize: 1.3em;
+$standardItemMargin: 5px;
+
+$dark-blue: rgb(31, 89, 143);
+$dark-blue-hover: rgba(31, 89, 143, 0.55);
+$dark-blue-disabled: rgba(31, 89, 143, 0.35);
+
+$elite: #3D3D3D;
+$gold: #E8C85B;
+$platinum: #CDCDCD;
+$ruby: #B93192;

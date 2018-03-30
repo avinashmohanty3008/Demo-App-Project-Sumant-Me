@@ -1,0 +1,102 @@
+{
+  "data":{
+
+  "groupLst": [
+    {
+      "groupId": "21",
+      "groupName": "All Rooms",
+      "groupDescription": "All Rooms"
+    },
+    {
+      "groupId": "42",
+      "groupName": "All Elevators",
+      "groupDescription": "All Elevators"
+    },
+    {
+      "groupId": "43",
+      "groupName": "All Bars",
+      "groupDescription": "All Bars"
+    },
+    {
+      "groupId": "45",
+      "groupName": "All Bakeries",
+      "groupDescription": "All Bakeries "
+    },
+    {
+      "groupId": "49",
+      "groupName": "All Casinos",
+      "groupDescription": "All Casinos"
+    },
+    {
+      "groupId": "50",
+      "groupName": "All Equipment Rooms",
+      "groupDescription": "All Equipment Rooms"
+    },
+    {
+      "groupId": "55",
+      "groupName": "All Pillow Closets",
+      "groupDescription": "Help store for Roles, don't delete the Roles here"
+    },
+    {
+      "groupId": "81",
+      "groupName": "All Rooms on Deck 03",
+      "groupDescription": "All Rooms on Deck 03"
+    },
+    {
+      "groupId": "1",
+      "groupName": "All Theatres",
+      "groupDescription": "All Theatres"
+    },
+    {
+      "groupId": "2",
+      "groupName": "All Freight",
+      "groupDescription": "All Freight"
+    },
+    {
+      "groupId": "52",
+      "groupName": "All Decks",
+      "groupDescription": "All Decks Group"
+    },
+    {
+      "groupId": "69",
+      "groupName": "Entire Vessel",
+      "groupDescription": "Entire Vessel"
+    },
+    {
+      "groupId": "41",
+      "groupName": "All Restaurants",
+      "groupDescription": "All Restaurants"
+    },
+    {
+      "groupId": "51",
+      "groupName": "All Linen Closets",
+      "groupDescription": "All Linen Closets"
+    },
+    {
+      "groupId": "53",
+      "groupName": "All Supply Rooms",
+      "groupDescription": "All Supply Rooms"
+    },
+    {
+      "groupId": "56",
+      "groupName": "All Lounges",
+      "groupDescription": "All Concierge"
+    },
+    {
+      "groupId": "44",
+      "groupName": "All Medical Closets",
+      "groupDescription": "All Medical Closets"
+    },
+    {
+      "groupId": "54",
+      "groupName": "All Spas",
+      "groupDescription": "All Spas"
+    },
+    {
+      "groupId": "101",
+      "groupName": "All Rooms on Deck 04",
+      "groupDescription": "All Rooms on Deck 04"
+    }
+  ]
+}
+}

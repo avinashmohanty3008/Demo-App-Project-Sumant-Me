@@ -1,0 +1,149 @@
+@import 'variables';
+@import './mixins';
+
+.clickable {
+  cursor: pointer;
+}
+
+.disabled {
+  color: $disabled-color;
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.required:after {
+  content: "*";
+  padding-left: 5px;
+}
+
+.headline {
+  text-transform: uppercase;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+$oneLineLineHeight: $standardItemHeight - 2*$standardItemPadding - 4; /* -4 for 2x border */
+
+.reusableItem {
+  font-size: $standardItemFontSize; /* default value */
+  width: $standardItemWidth; /* default value */
+  margin: 0 $standardItemMargin $standardItemMargin 0; /* default value */
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  height: $standardItemHeight;
+  text-align: center;
+  padding: $standardItemPadding;
+  position: relative;
+
+  &.horizontalItem {
+    margin-bottom: 0;
+  }
+
+  &.placeholder {
+    border: transparent;
+    cursor: auto;
+  }
+
+  &.selected {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: transparent;
+  }
+
+  i, div {
+    margin-right: 0;
+    line-height: $oneLineLineHeight;
+    width: 100%;
+    display: block;
+  }
+
+  &.input {
+    padding: 0;
+
+    :global(.ui.input) {
+      height: 100%;
+    }
+
+    input, input:focus {
+      padding: 5px;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      border: none;
+      color: $primary-color;
+      border-radius: 0;
+      background: transparent;
+
+      &::selection {
+        color: $primary-color;
+        background: #EAEAEA;
+      }
+    }
+  }
+
+  .title {
+    @include fancy-uppercase;
+    font-size: 0.9em;
+  }
+
+  .header {
+    position: absolute;
+    top: -32px;
+    left: 0;
+    text-align: left;
+    font-size: 12px;
+    @include fancy-uppercase;
+  }
+
+  i.mark {
+    width: auto;
+    position: absolute;
+    right: 4px;
+    bottom: 18px;
+    font-size: 7px;
+  }
+
+  &.twoLined, & .twoLined {
+    .title {
+      font-size: 1.1em;
+      height: 2*$oneLineLineHeight/3 - 2; /* for the margin on subtitle */
+      line-height: 2*$oneLineLineHeight/3 - 2; /* for the margin on subtitle */
+    }
+
+    .subtitle {
+      height: $oneLineLineHeight/3;
+      line-height: $oneLineLineHeight/3;
+      margin-bottom: 2px;
+      font-size: 0.6em;
+      @include fancy-uppercase;
+    }
+  }
+
+  .itemSection {
+    float: left;
+
+    &.two {
+      width: 50%;
+    }
+  }
+}
+
+.paddingSmall {
+  padding: 1em;
+}
+
+.paddingMedium {
+  padding: 2em;
+}
+
+.paddingLarge {
+  padding: 3em;
+}
+
+textarea {
+  resize: none;
+}
+
+.inputHasErrors {
+  border-color: $red;
+}

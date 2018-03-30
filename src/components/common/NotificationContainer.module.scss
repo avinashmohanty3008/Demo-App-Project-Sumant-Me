@@ -1,0 +1,11 @@
+.notificationMessage {
+  position: fixed;
+  top: 2em;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 999;
+
+  :global(.ui.message) {
+    padding-right: 3em;
+  }
+}

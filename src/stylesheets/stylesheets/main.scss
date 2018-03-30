@@ -1,0 +1,143 @@
+@import "includes/variables";
+@import "includes/mixins";
+@import "includes/fonts";
+@import "../../node_modules/semantic-ui-css/semantic.css";
+@import "includes/reset";
+@import '../../node_modules/people-picker-widget/build/styles.css';
+
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: -moz-linear-gradient(270deg, #37BBE5 0%, $darker-background-color 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #37BBE5), color-stop(100%, $darker-background-color)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(270deg, #37BBE5 0%, $darker-background-color 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(270deg, #37BBE5 0%, $darker-background-color 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(270deg, #37BBE5 0%, $darker-background-color 100%); /* ie10+ */
+  background: linear-gradient(180deg, #37BBE5 0%, $darker-background-color 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#37BBE5', endColorstr='#35568C', GradientType=0); /* ie6-9 */
+  background-attachment: fixed;
+  color: $primary-color;
+  font-family: "GothamSSm-Book", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#app {
+  height: 100%;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.7);
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.disabled {
+  color: $disabled-color;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.headline {
+  @include fancy-uppercase;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+@include media-min($smallScreenBreak) {
+  .scrolling-layout {
+    overflow-y: scroll;
+    padding-right: 20px;
+  }
+
+  .non-scrolling-layout {
+    overflow: visible;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darken($darker-background-color, 10%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.flexible-column {
+  @include flex-column-grow;
+}
+
+.ui.input {
+  font-size: 1.1em;
+}
+
+/**
+  Font definitions based on https://carnival.atlassian.net/wiki/display/TDC/Typography
+ */
+h1 {
+  font-family: "Archer-Bold-Italic", sans-serif;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: "GothamSSm-Medium", sans-serif;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: "GothamSSm-Medium", sans-serif;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: "GothamSSm-Book", sans-serif;
+  font-size: 16px;
+}
+
+button {
+  font-family: "GothamSSm-Medium", sans-serif;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+a {
+  font-family: "GothamSSm-Medium", sans-serif;
+  font-size: 14px;
+  text-transform: capitalize;
+}

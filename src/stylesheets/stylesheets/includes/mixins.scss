@@ -1,0 +1,67 @@
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+@mixin prefixed($property, $attr...) {
+  -webkit-#{$property}: $attr;
+  -moz-#{$property}: $attr;
+  -ms-#{$property}: $attr;
+  #{$property}: $attr;
+}
+
+@mixin transform($attr...) {
+  @include prefixed(transform, $attr);
+}
+
+@mixin transition($attr...) {
+  @include prefixed(transition, $attr);
+}
+
+@mixin absolute-center($offCenter...) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%) $offCenter);
+}
+
+@mixin media-max($max) {
+  @media screen and (max-width: $max - 1) {
+    @content;
+  }
+}
+
+@mixin media-min($min) {
+  @media screen and (min-width: $min) {
+    @content;
+  }
+}
+
+@mixin media($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max - 1) {
+    @content;
+  }
+}
+
+@mixin fancy-uppercase() {
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+@mixin clear() {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-column-grow {
+  @include flex-column;
+  flex-grow: 1;
+  height: inherit;
+}
