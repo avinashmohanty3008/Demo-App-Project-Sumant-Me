@@ -1,0 +1,27 @@
+{
+  "name": "my-dev-react-app",
+  "version": "1.0.0",
+  "description": "basic react setup",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack-dev-server -d --inline --hot",
+    "build-dev": "webpack",
+    "build-dev-serve": "npm run build-dev && opn http://localhost:8089 && node ./node_modules/http-server/bin/http-server -p 8089 ./public/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Avinash",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.11.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.0.13"
+  }
+}
